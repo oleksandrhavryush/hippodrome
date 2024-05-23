@@ -20,7 +20,7 @@ public class Main {
         Hippodrome hippodrome = new Hippodrome(horses);
 
         //Логування почутку стрибків
-        logger.info("Початок стрибків. Кількість учасників: {}", horses.size());
+        logger.info("The beginning of the jumps. Number of participants: {}", horses.size());
 
         for (int i = 0; i < 100; i++) {
             hippodrome.move();
@@ -32,7 +32,7 @@ public class Main {
         System.out.println(winnerName + " wins!");
 
         //Логування переможця
-        logger.info("Закінчення стрибків. Переможець: {}", winnerName);
+        logger.info("The end of the jumps. Winner: {}", winnerName);
     }
 
     private static void watch(Hippodrome hippodrome) throws Exception {
